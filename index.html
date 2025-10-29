@@ -224,7 +224,7 @@
                     <div class="icon">📱</div>
                     <div class="text">
                         <div class="label">버전</div>
-                        <div class="value">1.0.0 (Build 1)</div>
+                        <div class="value">1.1.0 (Build 2)</div>
                     </div>
                 </div>
 
@@ -232,7 +232,7 @@
                     <div class="icon">📦</div>
                     <div class="text">
                         <div class="label">파일 크기</div>
-                        <div class="value">10.8 MB</div>
+                        <div class="value">11.3 MB</div>
                     </div>
                 </div>
 
@@ -240,7 +240,7 @@
                     <div class="icon">📅</div>
                     <div class="text">
                         <div class="label">빌드 날짜</div>
-                        <div class="value" id="buildDate">2025년 10월 26일</div>
+                        <div class="value" id="buildDate">2025년 10월 30일</div>
                     </div>
                 </div>
 
@@ -281,6 +281,14 @@
                     <li>식약처 공공데이터 연동</li>
                 </ul>
             </div>
+            <div class="changelog">
+                <h3>📝 개선 사항(v1.1)</h3>
+                <ul>
+                    <li>상세화면에 생산실적 정보 표시</li>
+                    <li>제품명 검색 오류 개선</li>
+                    <li>효능효과, 용법용량 표시 오류 개선</li>
+                </ul>
+            </div>
         </div>
 
         <div class="footer">
@@ -292,12 +300,12 @@
     <script>
         function downloadAPK() {
             // APK 파일 경로를 실제 파일 위치로 변경하세요
-            const apkUrl = './app-arm64-v8a-release.apk';
+            const apkUrl = './app-arm64-v8a-release(v1.1).apk';
             
             // 다운로드 링크 생성
             const link = document.createElement('a');
             link.href = apkUrl;
-            link.download = 'my_app-1.0.0.apk';
+            link.download = 'my_app-1.1.0.apk';
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
